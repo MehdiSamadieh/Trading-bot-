@@ -1,0 +1,46 @@
+     for stock in chosen:
+           try:
+             url_trade = "https://api.polygon.io/v2/last/trade/" + stock + "?&apiKey=90w3p6QkgOldp2GfDqR9NaoMT5bCOp6P"
+             response = requests.get(url_trade)
+             trade = float(json.loads(response.text)["results"]["p"])
+             lastTrade.append(trade)
+             current_time=time.time()
+             top_gainer_all.append(stock)
+             timing.append(current_time)
+
+             #print("lasttrade", lastTrade)
+
+           except:
+            chosen.remove(stock)
+            print(chosen)
+            continue
+
+            try:
+              url2="https://api.polygon.io/v2/snapshot/locale/us/markets/stocks/tickers?tickers="+" stock"+"&apiKey=90w3p6QkgOldp2GfDqR9NaoMT5bCOp6P"
+              response1 = requests.get(url2)
+              close = float(json.loads(response1.text)["tickers"][0]["min"]["c"])
+              lastClose.append(close)
+            except:
+                top_gainer_all.remove(stock)
+                lastTrade.remove(trade)
+                timing.remove(current_time)
+                print("last",lastTrade)
+                print("chosen",chosen)
+                continue
+
+            for j in range(0, len(chosen)):
+
+                if lastTrade[j] - lastClose[j] == 0.03 * lastClose[j]:
+                    if (ourlist[j] in top_gainer_all) != 0:
+                        continue
+                    top_gainer_all.append(chosen[j])
+                    winsound.Beep(38, 1)
+                    print("@@@@@@@SAlarm of stock", chosen[j])
+                    print("lastTrade price=", lastTrade[j])
+                    print("lastclose=", lastClose[j])
+                    # print("float_share=", float_share[j])
+                    now = datetime.now()
+
+                    current_time = now.strftime("%H:%M:%S")
+                    print("Current Time =", current_time)
+

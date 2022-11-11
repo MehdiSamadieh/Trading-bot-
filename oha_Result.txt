@@ -1,0 +1,4 @@
+Alaram For: OLB Sign: 0.09000000000000075 volume=  170.0 total volume=  1200.0 ave volume=  3761.0 news time = 1634900412.2425885 News_price= 4.35 last _trade = 4.44 current time= 2021-10-22 07:13:49.279344
+
+Alaram For: DPRO Sign: 0.08099999999999996 volume=  300.0 total volume=  300.0 ave volume=  385.0 news time = 1634909294.4493997 News_price= 3.35 last _trade = 3.431 current time= 2021-10-22 09:28:14.621060
+

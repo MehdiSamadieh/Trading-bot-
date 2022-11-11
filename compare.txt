@@ -1,0 +1,12 @@
+stock:  JAX lastTrade:    newsPrice=  13.8  Current Time =  17:48:36
+stock:  RLX lastTrade:    newsPrice=  8.45  Current Time =  17:48:37
+stock:  JAX lastTrade:    newsPrice=  13.8  Current Time =  17:50:17
+stock:  RLX lastTrade:    newsPrice=  8.45  Current Time =  17:50:18
+stock:  JAX lastTrade:    newsPrice=  13.8  Current Time =  18:10:00
+stock:  RLX lastTrade:    newsPrice=  8.47  Current Time =  18:10:00
+stock:  JAX lastTrade:    newsPrice=  13.8  Current Time =  18:11:26
+stock:  RLX lastTrade:    newsPrice=  8.47  Current Time =  18:11:27
+stock:  JAX lastTrade:    newsPrice=  13.8  Current Time =  18:11:52
+stock:  RLX lastTrade:    newsPrice=  8.47  Current Time =  18:11:52
+stock:  JAX lastTrade:    newsPrice=  13.8  Current Time =  18:12:02
+stock:  RLX lastTrade:    newsPrice=  8.47  Current Time =  18:12:03

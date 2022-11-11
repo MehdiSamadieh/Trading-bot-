@@ -1,0 +1,13 @@
+dasht=[]
+    file = open("my.txt", "r")
+    for line in file:
+        for word in line.split():
+            if word in dasht:
+                continue
+            else:
+                dasht.append(word)
+    chosen.append(word)
+    timing.append(time.time())
+    top_gainer_all.append("0")
+    lastTrade.append(0)
+    lastClose.append(0)
